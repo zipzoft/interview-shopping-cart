@@ -6,8 +6,8 @@ namespace ZipzoftInterview\ShoppingCart;
  * CashierInterface
  * Tells the shopping cart How to charge the user
  */
-interface CashierInterface {
-
+interface CashierInterface
+{
     /**
      * Summary cart items
      * 

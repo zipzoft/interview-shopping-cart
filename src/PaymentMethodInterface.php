@@ -6,8 +6,8 @@ namespace ZipzoftInterview\ShoppingCart;
  * PaymentMethodInterface
  * Tells the shopping cart what your payment methods are available
  */
-interface PaymentMethodInterface {
-
+interface PaymentMethodInterface 
+{
     /**
      * Get the payment method's ID
      * 

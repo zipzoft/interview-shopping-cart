@@ -9,7 +9,7 @@ use ZipzoftInterview\ShoppingCart\Entity\CartItemEntity;
  * CartInterface
  * Tells the shopping cart how to store and retrieve cart items
  */
-interface CartInterface {
+interface CartInterface
 {
     /**
      * Add a product to the cart

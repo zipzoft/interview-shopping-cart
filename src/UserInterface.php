@@ -6,7 +6,8 @@ namespace ZipzoftInterview\ShoppingCart;
  * UserInterface
  * Tells the shopping cart what information is required to identify a user
  */
-interface UserInterface {
+interface UserInterface
+{
 
     /**
      * Get the user's ID
