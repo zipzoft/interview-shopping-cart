@@ -1,6 +1,6 @@
 <?php
 
-namespace ZipzoftInterview\ShoppingCart;
+namespace ZipzoftInterview\ShoppingCart\Entity;
 
 /**
  * AddressEntity
