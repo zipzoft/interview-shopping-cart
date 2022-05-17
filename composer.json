@@ -1,0 +1,18 @@
+{
+    "name": "zipzoft/interview-shopping-cart",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ZipzoftInterview\\ShoppingCart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PA",
+            "email": "magician_canobi@hotmail.com"
+        }
+    ],
+    "require": {
+        "php" : "^7.4|^8.0"
+    }
+}
