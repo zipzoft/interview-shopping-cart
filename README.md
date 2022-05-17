@@ -1,5 +1,11 @@
 # Interview - Shopping Cart
 
+สำหรับงานสัมภาษณ์
+
+ตำแหน่ง PHP Dev ระบบ Shopping Cart 
+
+บ.attr studio และ zipzoft
+
 ### Requirement
 ```
 PHP ^7.4|^8.0
