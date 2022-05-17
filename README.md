@@ -1,10 +1,9 @@
 # Interview - Shopping Cart
 
-สำหรับงานสัมภาษณ์
+ระบบ Shopping Cart สำหรับงานสัมภาษณ์
 
-ตำแหน่ง PHP Dev ระบบ Shopping Cart 
-
-บ.attr studio และ zipzoft
+- ตำแหน่ง PHP Dev
+- บ.attr studio และ zipzoft
 
 ### Requirement
 ```
