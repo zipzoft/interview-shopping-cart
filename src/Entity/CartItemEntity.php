@@ -6,7 +6,7 @@ namespace ZipzoftInterview\ShoppingCart\Entity;
  * CartItemEntity
  * You can use this class to store the cart item in your database
  */
-class CartItemEntity
+class CartItemEntity extends AbstractEntity
 {
     /**
      * ID of the cart item

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace ZipzoftInterview\ShoppingCart;
 
@@ -25,16 +25,15 @@ interface CartInterface
      * @param ProductEntity|CartItemEntity $product
      * @return boolean
      */
-    public function remove(ProductEntity|CartItemEntity $item);
+    public function remove($item);
 
     /**
      * Get all products in the cart
      * 
      * @return CartItemEntity[]
      */
-    */
     public function getProducts();
-    
+
     /**
      * Get the total price of the cart
      * 

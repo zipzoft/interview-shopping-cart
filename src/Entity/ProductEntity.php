@@ -6,7 +6,7 @@ namespace ZipzoftInterview\ShoppingCart\Entity;
  * ProductEntity
  * Tells the shopping cart how to store and retrieve products
  */
-class ProductEntity
+class ProductEntity extends AbstractEntity
 {
     /**
      * ID of the product

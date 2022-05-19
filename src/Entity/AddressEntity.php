@@ -6,7 +6,7 @@ namespace ZipzoftInterview\ShoppingCart\Entity;
  * AddressEntity
  * You can use this entity to store the shipping address for the user
  */
-class AddressEntity
+class AddressEntity extends AbstractEntity
 {
     /**
      * ID of the address
@@ -44,5 +44,4 @@ class AddressEntity
      * Country of the address
      */
     public $country;
-
 }
