@@ -47,7 +47,6 @@ class CartTest extends TestCase
         $this->assertEmpty($this->cart->getProducts());
     }
 
-
     public function test_should_remove_item_cart_fail()
     {
         $item = $this->cart->add(ProductEntity::fromArray([
@@ -90,7 +89,8 @@ class CartTest extends TestCase
         $this->assertEquals(30.00, $this->cart->getTotal());
     }
 
-    public function test_should_get_total_cart_fail()
+
+    public function test_should_remove_success()
     {
         $this->cart->add(ProductEntity::fromArray([
             'id' => 1,
@@ -111,5 +111,15 @@ class CartTest extends TestCase
         ]));
 
         $this->assertEquals(20.00, $this->cart->getTotal());
+
+        $this->assertCount(1, $this->cart->getProducts());
+
+        $this->cart->remove(ProductEntity::fromArray([
+            'id' => 2,
+            'name' => 'Product 2',
+            'price' => 20.00,
+        ]));
+
+        $this->assertEmpty($this->cart->getProducts());
     }
 }
