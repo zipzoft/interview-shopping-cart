@@ -22,13 +22,13 @@ class Cart implements CartInterface
      */
     public function add(ProductEntity $item): CartItemEntity
     {
-        $this->items[] = $item;
-
-        return CartItemEntity::fromArray([
+        $this->items[] = $cardItem = CartItemEntity::fromArray([
             'product' => $item->id,
             'quantity' => 1,
             'price' => $item->price,
         ]);
+
+        return $cardItem;
     }
 
     /**
@@ -39,11 +39,24 @@ class Cart implements CartInterface
      */
     public function remove($item)
     {
-        $key = array_search($item, $this->items);
+        if ($item instanceof CartItemEntity) {
+            foreach ($this->items as $key => $cartItem) {
+                if ($cartItem->product === $item->product) {
+                    unset($this->items[$key]);
+                    return true;
+                }
+            }
 
-        if ($key !== false) {
-            unset($this->items[$key]);
-            return true;
+            return false;
+        }
+
+        if ($item instanceof ProductEntity) {
+            foreach ($this->items as $key => $cartItem) {
+                if ($cartItem->product === $item->id) {
+                    unset($this->items[$key]);
+                    return true;
+                }
+            }
         }
 
         return false;
